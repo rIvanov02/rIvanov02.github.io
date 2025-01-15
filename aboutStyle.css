@@ -1,0 +1,327 @@
+/* General styles */
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    margin: 0;
+    background: linear-gradient(0deg, #080808, #1f1e28);
+    min-height: 100vh;    
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+
+  ul{
+    list-style: none;
+  }
+  
+/* Header & Navigation styles */
+header {
+    padding: 10px 0px;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 30px;
+  }
+  
+  nav ul li a {
+    color: #919090;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    margin: 40px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05); /* Subtle contrast for sections */
+    border-radius: 8px;
+    
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(88, 186, 255);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#work-experience ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.5em;
+    color: rgb(163, 163, 163);
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#work-experience ul li {
+    margin-bottom: 15px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 48px;
+}
+
+.gradient-text {
+    background-image: linear-gradient(-45deg, rgb(177, 8, 189), rgb(88, 186, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+/* Section-specific styles */
+#work-experience, #education, #certifications, #tech-skills, #languages {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+hr{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    border: none; /* Remove default border */
+    height: 2px; /* Adjust the height of the line */
+    background: linear-gradient(0deg, #080808, #1f1e28); /* Gradient background */
+   
+}
+#certifications {
+    padding: 40px 20px;
+    margin: 40px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #certifications h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  #certifications p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  .certification-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .certification-item h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(88, 186, 255);
+    margin-bottom: 10px;
+  }
+  
+  .certification-item p {
+    font-size: 1.5em;
+    color: rgb(163, 163, 163);
+  }
+  
+  .certification-item button {
+    background-color: rgb(88, 186, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .certification-item button:hover {
+    background-color: rgb(177, 8, 189);
+  }
+  
+  #certifications .certification-item:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  #tech-skills {
+    padding: 40px 20px;
+    margin: 40px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05); /* Subtle contrast for sections */
+    border-radius: 8px;
+}
+
+#tech-skills h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#tech-skills p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tech-category {
+    margin-top: 40px;
+}
+
+.tech-category h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(88, 186, 255);
+    margin-bottom: 20px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+}
+
+.tech-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.tech-item:hover {
+    color: rgb(88, 186, 255);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+#languages {
+    background: rgba(255, 255, 255, 0.1); /* Subtle background for the section */
+    padding: 40px 20px;
+    margin: 40px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#languages h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(88, 186, 255);
+}
+
+#languages p {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.language {
+    margin-bottom: 30px;
+}
+
+.language h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(88, 186, 255);
+    margin-bottom: 10px;
+}
+
+.language p {
+    font-size: 1.5em;
+    color: rgb(163, 163, 163);
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #88baff; /* Light blue */
+    height: 100%;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: adds slight upward motion on load */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#work-experience h1,
+#education h1,
+#certifications h1,
+#tech-skills h1,
+#languages h1 {
+    color: rgb(88, 186, 255);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}

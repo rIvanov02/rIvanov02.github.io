@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    margin: 0;
+    background: linear-gradient(0deg, #080808, #1f1e28);
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header & Navigation styles */
+header {
+    padding: 10px 0px;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #919090;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+/* Contacts Section */
+.contacts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* Creates 2 rows */
+    gap: 30px; /* Increase space between grid items */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for large screens */
+    height: 80vh; /* Adjust height to 80% of viewport height */
+    margin: auto;
+    margin-top: 5em;
+    
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px; /* Slightly larger rounded corners */
+    padding: 40px; /* Increased padding for larger contact items */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Larger shadow for emphasis */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.4rem; /* Slightly larger font size */
+    height: 100%; /* Ensure contact items fill available space */
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* More pronounced hover effect */
+}
+
+.contact-item h2 {
+    font-size: 1.7rem; /* Larger heading font */
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contact-link {
+    text-decoration: none;
+    font-size: 1.3rem; /* Increased link size */
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: adds slight upward motion on load */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
